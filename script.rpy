@@ -268,7 +268,7 @@ label start:
 
     ketos "IBU!! IBU KENAPA???"
 
-    show ibu 
+    show ibu senyum
 
     ibu "Ibu tadi lagi bebersih terus pusing sedikit, ibu gapapa ko"
 
@@ -282,7 +282,24 @@ Ibu Ketos: Gapapa nak, nanti juga ibu sembuh sendiri. Lagian cuman pusing sediki
     ibu "Kalo Ibu ngerasa makin pusing, kita ke rumah sakit aja ya bu."
 
     # scene 9 
+    scene bg sekolah
+    with fade
 
+    "keesokan harinya"
 
+    scene bg ruang_kepsek
+    with fade
+
+    show kepsek
+
+    kepsek " [ketos], ini dana dari sekolah yang bapak sebelumnya bilang. Semoga dana ini cukup untuk segala keperluan yang kalian perlu"
+
+    ketos "Alhamdulillah, saya akan gunakan dana ini sebaik mungkin."
     
+    kepsek "Yasudah, semangat ya persiapannya sampai hari-H."
+
+    ketos "Baik pak, saya sampaikan ke teman-teman akan kabar baik ini. Saya izin pamit pak."
+    
+    # scene 10
+
     return
