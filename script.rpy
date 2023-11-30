@@ -301,5 +301,12 @@ Ibu Ketos: Gapapa nak, nanti juga ibu sembuh sendiri. Lagian cuman pusing sediki
     ketos "Baik pak, saya sampaikan ke teman-teman akan kabar baik ini. Saya izin pamit pak."
     
     # scene 10
+    scene bg ruang_osis
+    with fade
 
+    "sebelum rapat osis dimulai"
+
+    ketos "Dana buat pensi udah turun. kalo duit ini buat berobat ibu, ibu bakalan bisa sembuh total dan gak bakal sakit lagi."
+    
+    ketos "Tapi kalo aku ambil duit ini dan ketauan. Aku bakal dicaci maki bahkan bisa dikeluarkan dari sekolah."
     return
