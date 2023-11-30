@@ -1,9 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-# Inisialisi asset
+﻿# Inisialisi asset
 init :
     image bg sekolah : 
         "sekolah.png" 
@@ -44,9 +39,6 @@ init :
     image npc_3 :
         "perempuan/figuran 1 cw.png"
         zoom 2
-    image npc_4 :
-        "perempuan/figuran 2 cw.png"
-        zoom 2
     image waketos :
         "perempuan/waketos biasa.png"
         zoom 2
@@ -80,10 +72,14 @@ init :
     image kepsek kecewa :
         "laki/kepsek senyum kecewa.png"
         zoom 2
+    image sekre :
+        "perempuan/figuran 2 cw.png"
+        zoom 2
 
 
 define ketos = Character("sule")
 define waketos = Character("rini")
+define sekre = Character("risma")
 define ibu = Character("ibu")
 define anggota = Character("seluruh anggota")
 define kepsek = Character("Pak Sugeng")
@@ -212,7 +208,53 @@ label start:
 
     ketos "Silahkan pak."
 
+    scene bg ruang_kepsek
+
+    "*Setelah proses diskusi yang panjang, akhirnya proposal itu pun akan diproses lebih lanjut oleh pihak sekolah*"
+
+    show kepsek 
+    with fade
+
+    kepsek "Oke, sekarang bapak sudah paham semua teknisnya. Bapak akan mendiskusikan ini dengan guru-guru yang bersangkutan untuk melancarkan acara ini."
+
+    kepsek "Untuk sementara, keperluan dana tolong kalian tanggung dulu menggunakan uang kas kalian sampai dana dari sekolah cair."
+
+    ketos "Baik pak, terima kasih banyak. Kalau begitu kami pamit dulu ya pak."
+
+    kepsek "iya silahkan"
+
     # scene 7
+    scene bg ruang_osis
+    with fade
+
+    show sekre
+
+    ketos "Alhamdulillah proposal lancar. Langsung kabarin ke anak-anak aja kali ya?"
+
+    sekre "Boleh, langsung gw kabarin ke grup ya biar cepet action."
+
+    scene bg ruang_osis
+    with fade
+
+    show npc_2 at center
+    show npc_1 at left 
+    show npc_3 at right
+
+    "Sore nya rapat singkat"
+
+    ketos "Sore semuanya, kita ada kabar baik nih. Proposal pensi kita udah di acc sama pihak sekolah."
+
+    ketos "Sekarang untuk keperluan-keperluan kita buat acara juga lagi di urus sama pihak sekolah, jadi kalau ada kebutuhan dana, sementara pake uang kas dulu yaa, nanti konfirmasi ke bendahara kalau butuh sesuatu."
+
+    anggota "Siap ka."
     
+    ketos "Oh iya satu lagi. Kalau ada keperluan yang bisa dicicil dari sekarang langsung kerjain aja ya biar kalau udah deket acara nanti kita ga terlalu hectic. Supaya acaranya berjalan sesuai rencana juga."
+
+    anggota "Siap laksanakan ka."
+
+    ketos "Oke sip, sekarang semuanya boleh pulang ya berhubung udah sore juga. Semangat semua."
+
+    # scene 8
+
     
     return
