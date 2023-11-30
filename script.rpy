@@ -165,6 +165,19 @@ label start:
     anggota "siap ka"
 
 # scene 5
+    scene bg ruang_osis
+    with fade
+
+    "dua minggu kemudian"
+
+    show npc_2 at center
+    show npc_1 at left 
+    show npc_3 at right 
+
+    ketos "Oke temen-temen. Proposalnya baru aja di selesaiin sama sekretaris kita. Sekarang saya dan sekretaris akan mengajukan proposal ini ke kepala sekolah."
+
+    ketos "Terima kasih atas kerja keras temen-temen semua, sekarang semoga proposal ini bisa di acc dengan cepat yaa."
+
     
 
     
