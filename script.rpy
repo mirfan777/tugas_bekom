@@ -17,6 +17,12 @@ init :
     image bg ruang_rapat :
         "ruang rapat.jpg"
         zoom 3
+    image bg rumah :
+        "bg rumah.jpg"
+        zoom 2
+    image bg dalam_rumah :
+        "dalam rumah.jpeg"
+        zoom 3
     # inisialisasi karakter
     image ketos :
         "laki/mc biasa.png"
@@ -24,16 +30,20 @@ init :
     image waketos :
         "laki/figuran cowo 2.png"
         zoom 2
+    image ibu :
+        "ibu senyum.png"
+        zoom 3
 
 
 define ketos = Character("udin")
 define waketos = Character("sule")
+define ibu = Character("ibu")
 
 
 # The game starts here.
 
 label start:
-
+# scene 1
     scene bg sekolah 
 
     show waketos
@@ -50,5 +60,19 @@ label start:
 
     waketos "Makasih yaa [waketos]."
 
+# scene 2
+    scene bg rumah
 
+    ketos "..."
+
+    scene bg dalam_rumah
+
+    ketos "Assalamualaikum"
+
+    ibu "Waalaikumsalam, anak ibu sudah pulang"
+
+    ketos "Eh ibu lagi sakit ko bebersih(?). Sinii bu, sini biar aku aja."
+
+# scene 3
+    
     return
