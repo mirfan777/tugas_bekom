@@ -74,5 +74,22 @@ label start:
     ketos "Eh ibu lagi sakit ko bebersih(?). Sinii bu, sini biar aku aja."
 
 # scene 3
+    scene bg rumah
+
+    with fade
+
+    show ketos
+
+    ketos "Kenalin, aku [ketos]. Aku adalah seorang anak tunggal di keluarga ku. Aku tinggal bersama orang tua ku, namun kondisi ibuku saat ini sedang sakit parah."
+    
+    ketos "Ayahku adalah seorang buruh tani sehingga kami cukup kesulitan untuk memberikan perawatan yang cukup untuk ibuku."
+
+    ketos "Aku juga seorang ketua osis di SMA X jadi aku tidak punya waktu untuk nongkrong atau bermain seperti anak SMA pada umumnya."
+
+    ketos "Aku selalu ingin membantu orang tuaku dengan bekerja paruh waktu, namun ayahku selalu melarangnya."
+
+    ketos "Dia bilang aku harus fokus pada sekolahku agar kelak aku dapat menjadi orang yang sukses karena aku adalah satu satunya harapan mereka."
+
+# scene 4
     
     return
