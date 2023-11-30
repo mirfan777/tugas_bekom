@@ -18,13 +18,16 @@ init :
         "ruang rapat.jpg"
         zoom 3
     image bg ruang_osis :
-        "ruang osis.jpg"
+        "ruang osis.jpeg"
         zoom 3
     image bg rumah :
         "bg rumah.jpg"
         zoom 2
     image bg dalam_rumah :
         "dalam rumah.jpeg"
+        zoom 3
+    image bg ruang_kepsek :
+        "ruangan kepsek.jpg"
         zoom 3
 
 
@@ -68,12 +71,22 @@ init :
     image ibu senyum :
         "perempuan/ibu senyum.png"
         zoom 2
+    image kepsek :
+        "laki/kepsek senyum biasa.png"
+        zoom 2
+    image kepsek cengir :
+        "laki/kepsek senyum gigi.png"
+        zoom 3
+    image kepsek kecewa :
+        "laki/kepsek senyum kecewa.png"
+        zoom 2
 
 
 define ketos = Character("sule")
 define waketos = Character("rini")
 define ibu = Character("ibu")
 define anggota = Character("seluruh anggota")
+define kepsek = Character("Pak Sugeng")
 
 
 # The game starts here.
@@ -178,8 +191,28 @@ label start:
 
     ketos "Terima kasih atas kerja keras temen-temen semua, sekarang semoga proposal ini bisa di acc dengan cepat yaa."
 
-    
+    anggota "semoga berhasil ya kak"
+    # scene 6 
+    scene bg ruang_kepsek
+    with fade
 
+    "*knock-knock*"
+
+    kepsek "masuk"
+
+    show kepsek
+
+    ketos "Permisi pak, maksud dan tujuan kami kesini, kami ingin mengajukan proposal acara pentas seni SMA X yang akan diadakan 3 bulan lagi."
+
+    ketos "Apabila ada yang ingin ditanyakan atau direvisi silahkan bapak ajukan ke saya."
+
+    show kepsek cengir
+
+    kepsek "oke saya baca dulu ya"
+
+    ketos "Silahkan pak."
+
+    # scene 7
     
     
     return
