@@ -3,31 +3,52 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+# Inisialisi asset
+init :
+    image bg sekolah : 
+        "sekolah.png" 
+        zoom 3
+    image bg dalam_kelas :
+        "dalam kelas.jpg"
+        zoom 3
+    image bg lorong_kelas :
+        "lorong kelas.jpeg"
+        zoom 3
+    image bg ruang_rapat :
+        "ruang rapat.jpg"
+        zoom 3
+    # inisialisasi karakter
+    image ketos :
+        "laki/mc biasa.png"
+        zoom 3
+    image waketos :
+        "laki/figuran cowo 2.png"
+        zoom 2
+
+
+define ketos = Character("udin")
+define waketos = Character("sule")
 
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg sekolah 
 
-    scene bg room
+    show waketos
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    waketos "pagi [ketos]"
 
-    show eileen happy
+    ketos "Pagi [waketos]"
 
-    # These display lines of dialogue.
+    waketos "kita jadi ngadain pentas kan? Udah ditanyain banyak orangg nihh"
 
-    e "You've created a new Ren'Py game."
+    ketos "jadii [waketos], sabar yaa, plan kasarnya udah jadi. Nanti tolong sampain ke temen temen untuk rapat besok!."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    waketos "Siap paketuuu, nanti langsung gue sampaiin ke temen-temen, besok tinggal cus rapat deh."
 
-    # This ends the game.
+    waketos "Makasih yaa [waketos]."
+
 
     return
