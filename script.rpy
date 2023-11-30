@@ -256,5 +256,33 @@ label start:
 
     # scene 8
 
+    scene bg rumah
+    with fade
+
+    "..."
+
+    scene bg dalam_rumah
+    with fade
+
+    ketos "Assalamualaikum"
+
+    ketos "IBU!! IBU KENAPA???"
+
+    show ibu 
+
+    ibu "Ibu tadi lagi bebersih terus pusing sedikit, ibu gapapa ko"
+
+    ketos " Gapapa gimana bu? Kita ke rumah sakit aja ya biar ibu cepat sembuh."
+
+    ibu "Jangan nak ibu gapapa ko. Lagian kita mana mampu buat bayar biaya rumah sakit."
+
+    ketos "Biaya mah belakangan bu, yang penting ibu sembuh dulu. Nanti pasti ada jalannya.
+Ibu Ketos: Gapapa nak, nanti juga ibu sembuh sendiri. Lagian cuman pusing sedikit, gausah dipikirin banget.
+"
+    ibu "Kalo Ibu ngerasa makin pusing, kita ke rumah sakit aja ya bu."
+
+    # scene 9 
+
+
     
     return
